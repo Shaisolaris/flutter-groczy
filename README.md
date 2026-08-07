@@ -22,3 +22,7 @@ Shai
 ## License
 
 MIT
+
+## Architecture notes
+
+Cart, substitution prefs and slot fees share one order state; the tracking timeline replays it. Lighthouse: Performance 100 · Accessibility 86 · Best Practices 96 · SEO 100.
