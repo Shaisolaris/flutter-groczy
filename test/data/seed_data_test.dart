@@ -1,7 +1,5 @@
-import 'package:flutter_groczy/core/models/category.dart';
 import 'package:flutter_groczy/core/models/order.dart';
 import 'package:flutter_groczy/core/models/product.dart';
-import 'package:flutter_groczy/core/models/shopping_list.dart';
 import 'package:flutter_groczy/data/seed_data.dart';
 import 'package:flutter_test/flutter_test.dart';
 
