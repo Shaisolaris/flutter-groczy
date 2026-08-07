@@ -1,0 +1,30 @@
+name: flutter_groczy
+description: >-
+  Groczy - a grocery delivery app. Browse categories, build a cart, pick a
+  delivery slot, and track orders live from checkout to delivery.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State management. GroczyRepository is injected through a Riverpod
+  # Provider so the UI layer never talks to shared_preferences directly.
+  flutter_riverpod: ^2.6.0
+
+  # Local persistence for the cart, order history, and saved shopping lists
+  # (stored as JSON).
+  shared_preferences: ^2.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
