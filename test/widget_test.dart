@@ -10,6 +10,10 @@ import 'package:shared_preferences/shared_preferences.dart';
 /// SharedPreferences instance, so every test starts from the same
 /// first-run, freshly-seeded state.
 Future<void> pumpGroczyApp(WidgetTester tester) async {
+  tester.view.physicalSize = const Size(1080, 2340);
+  tester.view.devicePixelRatio = 1.0;
+  addTearDown(tester.view.reset);
+
   SharedPreferences.setMockInitialValues(<String, Object>{});
   final prefs = await SharedPreferences.getInstance();
 

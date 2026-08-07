@@ -45,8 +45,9 @@ class OrderCard extends ConsumerWidget {
     final status = statusForOrder(order.placedAt, now);
     const previewCap = 4;
 
-    return DecoratedBox(
-      decoration: BoxDecoration(color: scheme.surfaceContainerHigh, borderRadius: BorderRadius.circular(18)),
+    return Material(
+      color: scheme.surfaceContainerHigh,
+      borderRadius: BorderRadius.circular(18),
       child: ClipRRect(
         borderRadius: BorderRadius.circular(18),
         child: Theme(
